@@ -50,7 +50,9 @@ export default function Footer() {
         {Object.entries(cols).map(([h, links]) => (
           <div key={h}>
             <h4>{h}</h4>
-            {links.map((l) => <a href="#" key={l}>{l}</a>)}
+            {links.map((l) => <a className="footer__link" href="#" key={l}>
+              {l}
+            </a>)}
           </div>
         ))}
       </div>
